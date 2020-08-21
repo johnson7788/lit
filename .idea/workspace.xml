@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7adaf7dd-5343-4922-bbf8-2a14e2d3f23a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/lit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lit.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lit_nlp/examples/datasets/classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/lit_nlp/examples/datasets/classification.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +23,67 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lit_nlp/examples" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lit_nlp/examples" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.pretrained_lm_mybert">
+    <configuration name="dev_server" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lit_nlp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lit_nlp/dev_server.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pretrained_lm_mybert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lit" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lit_nlp/examples/pretrained_lm_mybert.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.pretrained_lm_mybert" />
+      <item itemvalue="Python.dev_server" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.pretrained_lm_mybert" />
+        <item itemvalue="Python.dev_server" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -34,5 +97,63 @@
       <updated>1597918600760</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="188" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597989767755">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="188" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.829@0.23.1440.829" timestamp="1597989767755" />
+    <state width="1419" height="215" key="GridCell.Tab.0.bottom" timestamp="1597989778429">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1419" height="215" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1597989778429" />
+    <state width="1419" height="215" key="GridCell.Tab.0.center" timestamp="1597989778428">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1419" height="215" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1597989778428" />
+    <state width="1419" height="215" key="GridCell.Tab.0.left" timestamp="1597989778427">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1419" height="215" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1597989778427" />
+    <state width="1419" height="215" key="GridCell.Tab.0.right" timestamp="1597989778428">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1419" height="215" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1597989778428" />
+    <state width="1419" height="266" key="GridCell.Tab.1.bottom" timestamp="1597989770025">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.1.bottom/0.23.1440.829@0.23.1440.829" timestamp="1597989770025" />
+    <state width="1419" height="266" key="GridCell.Tab.1.center" timestamp="1597989770024">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.1.center/0.23.1440.829@0.23.1440.829" timestamp="1597989770024" />
+    <state width="1419" height="266" key="GridCell.Tab.1.left" timestamp="1597989770024">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.1.left/0.23.1440.829@0.23.1440.829" timestamp="1597989770024" />
+    <state width="1419" height="266" key="GridCell.Tab.1.right" timestamp="1597989770025">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1419" height="266" key="GridCell.Tab.1.right/0.23.1440.829@0.23.1440.829" timestamp="1597989770025" />
+    <state x="197" y="103" key="SettingsEditor" timestamp="1597974047605">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="197" y="103" key="SettingsEditor/0.23.1440.829@0.23.1440.829" timestamp="1597974047605" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lit_nlp/examples/datasets/classification.py</url>
+          <line>106</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lit_nlp/examples/pretrained_lm_mybert.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

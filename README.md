@@ -5,8 +5,8 @@
 
 LIT旨在回答以下问题：
 * **哪种示例**在我的模型上效果不佳？
-* **为什么我的模型做出此预测？**该预测可以归因于对抗行为还是训练集中的不良先验？
-* **如果我更改文本样式，动词时态或代词性别之类的内容，我的模型是否会表现一致**？
+* **为什么我的模型做出此预测** ？该预测可以归因于对抗行为还是训练集中的不良先验？
+* **如果我更改文本样式**，动词时态或代词性别之类的内容，我的模型是否会表现一致？
 
 ![Example of LIT UI](docs/images/figure-1.png)
 
@@ -42,7 +42,7 @@ conda install cudnn cupti  # optional, for GPU support
 conda install -c pytorch pytorch  # optional, for PyTorch
 
 # Build the frontend
-cd ~/lit/lit_nlp/client
+cd lit_nlp/client
 yarn && yarn build
 ```
 
@@ -55,8 +55,10 @@ cd ~/lit
 python -m lit_nlp.examples.quickstart_sst_demo --port=5432
 ```
 
-这将在[Stanford Sentiment Treebank](https://nlp.stanford.edu/sentiment/treebank.html)上微调[BERT-tiny](https://arxiv.org/abs/1908.08962)模型， 
-在GPU上的时间应该少于5分钟。 训练完成后，在开发集上启动LIT服务； http://localhost:5432作为用户界面。
+这将在[Stanford Sentiment Treebank](https://nlp.stanford.edu/sentiment/treebank.html)上
+微调[BERT-tiny](https://arxiv.org/abs/1908.08962)模型， 
+在GPU上的时间应该少于5分钟。 训练完成后，在开发集上启动LIT服务, 
+http://localhost:5432作为用户界面。
 
 
 ### Quick start: language modeling
@@ -65,8 +67,7 @@ python -m lit_nlp.examples.quickstart_sst_demo --port=5432
 
 ```sh
 cd ~/lit
-python -m lit_nlp.examples.pretrained_lm_demo --models=bert-base-uncased \
-  --port=5432
+python -m lit_nlp.examples.pretrained_lm_demo --models=bert-base-uncased --port=5432
 ```
 
 And navigate to http://localhost:5432 for the UI.

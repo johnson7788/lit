@@ -107,3 +107,25 @@ class IMDBData(lit_dataset.Dataset):
         "text": lit_types.TextSegment(),
         "label": lit_types.CategoryLabel(vocab=self.LABELS),
     }
+
+class CERTData(lit_dataset.Dataset):
+  LABELS = ['组织机构代码证', '营业执照', '身份证', '事业单位法人证书', '学位证', '其它', '四六级', '环境证书', '驾照', '毕业证']
+  def __init__(self, data_mode="test", max_seq_len=500):
+    raw_examples = [line.rstrip() for line in open('/opt/lang/data/{}.txt'.format(data_mode))]
+    self._examples = []  # populate this with data records
+    for record in raw_examples:
+      # format and truncate from the end to max_seq_len tokens.
+      label, text = record.split('\t')
+      truncated_text = " ".join(
+          text.replace("<br />", "").split()[-max_seq_len:])
+      self._examples.append({
+          "text": truncated_text,
+          "label": label,
+      })
+
+  def spec(self) -> lit_types.Spec:
+    """Dataset spec, which should match the model"s input_spec()."""
+    return {
+        "text": lit_types.TextSegment(),
+        "label": lit_types.CategoryLabel(vocab=self.LABELS),
+    }
