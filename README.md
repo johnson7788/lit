@@ -1,46 +1,35 @@
 # 🔥 Language Interpretability Tool (LIT)
 
-The Language Interpretability Tool (LIT) is a visual, interactive
-model-understanding tool for NLP models.
+语言可解释性工具（LIT）是一种可视的，交互式的
+用于NLP模型的模型理解工具。
 
-LIT is built to answer questions such as:
-
-*   **What kind of examples** does my model perform poorly on?
-*   **Why did my model make this prediction?** Can this prediction be attributed
-    to adversarial behavior, or to undesirable priors in the training set?
-*   **Does my model behave consistently** if I change things like textual style,
-    verb tense, or pronoun gender?
+LIT旨在回答以下问题：
+* **哪种示例**在我的模型上效果不佳？
+* **为什么我的模型做出此预测？**该预测可以归因于对抗行为还是训练集中的不良先验？
+* **如果我更改文本样式，动词时态或代词性别之类的内容，我的模型是否会表现一致**？
 
 ![Example of LIT UI](docs/images/figure-1.png)
 
-LIT supports a variety of debugging workflows through a browser-based UI.
-Features include:
+LIT通过基于浏览器的UI支持各种调试工作流。
+功能包括：
 
-*   **Local explanations** via salience maps, attention, and rich visualization
-    of model predictions.
-*   **Aggregate analysis** including custom metrics, slicing and binning, and
-    visualization of embedding spaces.
-*   **Counterfactual generation** via manual edits or generator plug-ins to
-    dynamically create and evaluate new examples.
-*   **Side-by-side mode** to compare two or more models, or one model on a pair
-    of examples.
-*   **Highly extensible** to new model types, including classification,
-    regression, span labeling, seq2seq, and language modeling. Supports
-    multi-head models and multiple input features out of the box.
-*   **Framework-agnostic** and compatible with TensorFlow, PyTorch, and more.
+* **Local explanations** 通过显着图，注意力和丰富的模型预测可视化。
+* **Aggregate analysis**，包括自定义指标，切片和binning以及嵌入空间的可视化。
+* **Counterfactual generation**, 通过编辑或生成器插件来真实生成，以动态创建和评估新示例。
+* **Side-by-side mode**, 比较两个或多个模型，或一对示例中的一个模型。
+* **Highly extensible**到新模型类型，包括分类，回归，跨度标签，seq2seq和语言建模。 开箱即用地支持multi-head 模型和多种输入特征。
+* **与框架无关**，与TensorFlow，PyTorch等兼容。
 
-For a broader overview, check out [our paper](https://arxiv.org/abs/2008.05122) and the
-[user guide](docs/user_guide.md).
+有关更广泛的概述，请查看[our paper](https://arxiv.org/abs/2008.05122) 和[user guide](docs/user_guide.md)。
 
 ## Documentation
-
 *   [User Guide](docs/user_guide.md)
 *   [Developer Guide](docs/development.md)
 *   [FAQ](docs/faq.md)
 
 ## Download and Installation
 
-Download the repo and set up a Python environment:
+下载repo并设置Python环境：
 
 ```sh
 git clone https://github.com/PAIR-code/lit.git ~/lit
@@ -66,15 +55,13 @@ cd ~/lit
 python -m lit_nlp.examples.quickstart_sst_demo --port=5432
 ```
 
-This will fine-tune a [BERT-tiny](https://arxiv.org/abs/1908.08962) model on the
-[Stanford Sentiment Treebank](https://nlp.stanford.edu/sentiment/treebank.html),
-which should take less than 5 minutes on a GPU. After training completes, it'll
-start a LIT server on the development set; navigate to http://localhost:5432 for
-the UI.
+这将在[Stanford Sentiment Treebank](https://nlp.stanford.edu/sentiment/treebank.html)上微调[BERT-tiny](https://arxiv.org/abs/1908.08962)模型， 
+在GPU上的时间应该少于5分钟。 训练完成后，在开发集上启动LIT服务； http://localhost:5432作为用户界面。
+
 
 ### Quick start: language modeling
 
-To explore predictions from a pretrained language model (BERT or GPT-2), run:
+要探索预训练的语言模型（BERT或GPT-2）的预测，请运行：
 
 ```sh
 cd ~/lit
@@ -95,29 +82,26 @@ python -m lit_nlp.examples.<example_name> --port=5432 [optional --args]
 
 ## User Guide
 
-To learn about LIT's features, check out the [user guide](docs/user_guide.md), or
+要了解LIT的功能， check out the [user guide](docs/user_guide.md), or
 watch this [short video](https://www.youtube.com/watch?v=j0OfBWFUqIE).
 
-## Adding your own models or data
+## 添加自己的模型或数据
 
-You can easily run LIT with your own model by creating a custom `demo.py`
-launcher, similar to those in ../lit_nlp/examples. The basic
-steps are:
+您可以通过创建自定义`demo.py`启动器来轻松地使用自己的模型运行LIT，
+类似于../lit_nlp/examples。 基础的步骤是：
 
 *   Write a data loader which follows the
     [`Dataset` API](docs/python_api.md#datasets)
 *   Write a model wrapper which follows the [`Model` API](docs/python_api.md#models)
 *   Pass models, datasets, and any additional
-    [components](docs/python_api.md#interpretation-components) to the LIT server
-    class
+    [components](docs/python_api.md#interpretation-components) to the LIT server class
 
-For a full walkthrough, see
+有关完整的演练， see
 [adding models and data](docs/python_api.md#adding-models-and-data).
 
-## Extending LIT with new components
+## 用新组件扩展LIT
 
-LIT is easy to extend with new interpretability components, generators, and
-more, both on the frontend or the backend. See the
+LIT易于在前端或后端使用新的可解释性组件，生成器等进行扩展。 见
 [developer guide](docs/development.md) to get started.
 
 ## Citing LIT
